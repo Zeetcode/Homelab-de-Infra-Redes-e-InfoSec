@@ -172,7 +172,7 @@ Além de consolidar conceitos de infraestrutura, o projeto também funciona como
 
 Estudante de Segurança da Informação
 
-- 💼 LinkedIn: https://www.linkedin.com/in/esttev%C3%A3o-pereira-silva-143848375/
+- 💼 LinkedIn: https://www.linkedin.com/in/esttevao-pereira-silva/
 - 📧 Email: esttevaopereira1@gmail.com
 
 ---
