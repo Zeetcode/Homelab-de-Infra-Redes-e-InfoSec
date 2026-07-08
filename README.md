@@ -9,28 +9,28 @@ O homelab roda sobre **Ubuntu Server**, hospedando serviços de rede, armazename
 **Hardware:** HP G42 (notebook reaproveitado como servidor com seu incrivel i5 de 1ª geração) 
 
 ##  Arquitetura
-
+```text
 ┌──────────────────────────────────────────────┐
-│              HP G42 - Ubuntu Server          │
+│             HP G42 - Ubuntu Server           │
 │                                              │
-│              ┌───────────────┐               │
-│              │    Docker /   │               │
-│              │ Docker Compose│               │
-│              └───────┬───────┘               │
-│                      │                       │
-│      ┌───────────────┼───────────────┐       │
-│      │               │               │       │
-│ ┌─────────┐    ┌─────────────┐  ┌──────────┐ │
-│ │ Pi-hole │    │  Nextcloud  │  │  OSIRIS  │ │
-│ │  (DNS)  │    │ (Armazena-  │  │ (OSINT)  │ │
-│ │         │    │  mento)     │  │          │ │
-│ └─────────┘    └─────────────┘  └──────────┘ │
+│      ┌──────────────────────────────┐        │
+│      │   Docker / Docker Compose    │        │
+│      └──────────────┬───────────────┘        │
+│                     │                        │
+│      ┌──────────────┼───────────────┐        │
+│      │              │               │        │
+│      ▼              ▼               ▼        │
+│ ┌─────────┐  ┌─────────────┐  ┌──────────┐   │
+│ │ Pi-hole │  │ Nextcloud   │  │  OSIRIS  │   │
+│ │  (DNS)  │  │ (Armazen.)  │  │ (OSINT)  │   │
+│ └─────────┘  └─────────────┘  └──────────┘   │
 │                                              │
-│              ┌──────────────┐                │
-│              │  Tailscale   │                │
-│              │  (VPN Mesh)  │                │
-│              └──────────────┘                │
-|──────────────────────────────────────────────|
+│            ┌──────────────────────┐          │
+│            │      Tailscale       │          │
+│            │      (VPN Mesh)      │          │
+│            └──────────────────────┘          │
+└──────────────────────────────────────────────┘
+```
 
 
 ##  Serviços Implementados
